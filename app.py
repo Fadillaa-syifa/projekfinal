@@ -221,7 +221,7 @@ jumlah_unsur = st.number_input(
 
 total_bm = 0
 
-for i in range(jumlah_unsur):
+    for i in range(jumlah_unsur):
     col1, col2 = st.columns(2)
 
     with col1:
@@ -241,7 +241,7 @@ for i in range(jumlah_unsur):
 
     total_bm += data_ar[unsur] * atom
 
-if st.button("Hitung BM"):
+    if st.button("Hitung BM"):
     st.success(f"BM = {total_bm:.2f} g/mol")
 
 elif menu == "Ar":
