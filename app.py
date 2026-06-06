@@ -164,10 +164,6 @@ NaCl = 23 + 35,5 = 58,5 g/mol
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
     jumlah = st.number_input("Jumlah atom", min_value=1, step=1)
 
-    if st.button("Hitung BM"):
-        hasil = data_ar[unsur] * jumlah
-        st.success(f"BM = {hasil} g/mol")
-
 elif menu == "Ar":
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
     st.info(f"Ar {unsur} = {data_ar[unsur]}")
