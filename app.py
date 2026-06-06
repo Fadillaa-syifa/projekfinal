@@ -355,7 +355,7 @@ st.markdown("""
 
 /* Warna tombol menu sidebar */
 [data-testid="stSidebar"] .stButton button {
-    background-color: #4A90C2;   /* warna tombol */
+    background-color: ; #588BAE /* warna tombol */
     color: white;                /* warna tulisan */
     border-radius: 10px;
 }
@@ -396,7 +396,6 @@ st.markdown("""
 /* Kotak selectbox */
 div[data-baseweb="select"] > div {
     background-color: #588BAE;
-    color: white;
     border-radius: 10px;
 }
 
