@@ -355,7 +355,7 @@ st.markdown("""
 
 /* Warna tombol menu sidebar */
 [data-testid="stSidebar"] .stButton button {
-    background-color: #588BAE /* warna tombol */
+    background-color: #003152 /* warna tombol */
     color: white;                /* warna tulisan */
     border-radius: 10px;
 }
