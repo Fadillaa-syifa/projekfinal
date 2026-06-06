@@ -355,9 +355,11 @@ st.markdown("""
 
 /* Warna tombol menu sidebar */
 [data-testid="stSidebar"] .stButton button {
-    background-color: #003152 /* warna tombol */
+    background-color: #003152; /* warna tombol */
     color: white;                
 }
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown("""
 <style>
