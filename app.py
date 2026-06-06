@@ -117,10 +117,6 @@ elif menu == "Normalitas":
     st.write("""
 Normalitas adalah konsentrasi larutan yang menunjukkan jumlah ekuivalen zat terlarut dalam setiap liter larutan. Normalitas banyak digunakan dalam titrasi asam-basa, reaksi redoks, dan analisis kimia yang melibatkan perpindahan ion atau elektron.
 
-Hubungan normalitas dengan molaritas adalah:
-
-N = M × faktor ekuivalen (f)
-
 Satuan normalitas adalah ekuivalen per liter (N) atau grek/L.
 """)
 
@@ -173,14 +169,6 @@ elif menu == "Molaritas":
 
     st.write("""
 Molaritas adalah konsentrasi larutan yang menyatakan jumlah mol zat terlarut dalam setiap liter larutan. Molaritas sangat sering digunakan dalam kimia untuk membuat larutan standar, menghitung konsentrasi reagen, dan melakukan perhitungan stoikiometri reaksi.
-
-Rumus molaritas adalah:
-
-M = n / V
-
-dengan:
-- n = jumlah mol zat terlarut
-- V = volume larutan (L)
 
 Satuan molaritas adalah mol/L atau M (molar).
 """)
