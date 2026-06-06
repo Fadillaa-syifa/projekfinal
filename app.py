@@ -395,8 +395,7 @@ elif jenis == "Reamur ke Fahrenheit":
 elif jenis == "Reamur ke Kelvin":
         hasil = (suhu * 5/4) + 273.15
         satuan = "K"
-
-    st.success(f"Hasil = {hasil:.2f} {satuan}")
+    
         st.success(f"Hasil = {hasil:.2f} {satuan}")
 
 elif menu == "PPM":
