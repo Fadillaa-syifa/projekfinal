@@ -190,7 +190,7 @@ valensi = st.number_input(
     value=1
 )
 
-    if st.button("Hitung BE"):
+ if st.button("Hitung BE"):
     be = bm_total / valensi
     st.success(f"BM = {bm_total:.2f} g/mol")
     st.success(f"BE = {be:.2f} g/grek")
