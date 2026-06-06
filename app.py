@@ -131,13 +131,72 @@ elif menu == "Molaritas":
         st.success(f"Molaritas = {hasil:.4f} mol/L")
 
 elif menu == "BE":
-    bm = st.number_input("BM Senyawa", min_value=0.0)
-    valensi = st.number_input("Valensi", min_value=1.0)
+    
+st.subheader("🧪 Berat Ekivalen (BE)")
 
-    if st.button("Hitung BE"):
-        hasil = bm / valensi
-        st.success(f"BE = {hasil:.4f} g/grek")
+ st.info("""Berat Ekivalen (BE) adalah massa suatu zat yang setara dengan satu ekuivalen dalam suatu reaksi kimia. BE digunakan dalam perhitungan normalitas, titrasi, serta analisis reaksi asam-basa dan reaksi redoks.
 
+Rumus:
+
+BE = BM / a
+
+dengan:
+- BE = Berat Ekivalen
+- BM = Berat Molekul
+- a = Faktor ekuivalen (valensi)
+
+Satuan Berat Ekivalen adalah gram per ekuivalen (g/ekuivalen).
+
+Contoh:
+
+H₂SO₄
+BM = 98 g/mol
+f = 2
+
+BE = 98 / 2 = 49 g/ekuivalen
+""")
+ 
+jumlah_unsur = st.number_input(
+    "Jumlah jenis unsur",
+    min_value=1,
+    max_value=5,
+    value=2,
+    key="be_jumlah"
+)
+
+bm_total = 0
+
+for i in range(jumlah_unsur):
+    col1, col2 = st.columns(2)
+
+    with col1:
+        unsur = st.selectbox(
+            f"Unsur {i+1}",
+            list(data_ar.keys()),
+            key=f"be_unsur_{i}"
+        )
+
+    with col2:
+        atom = st.number_input(
+            f"Jumlah atom {i+1}",
+            min_value=1,
+            step=1,
+            key=f"be_atom_{i}"
+        )
+
+    bm_total += data_ar[unsur] * atom
+
+valensi = st.number_input(
+    "Valensi",
+    min_value=1,
+    value=1
+)
+
+if st.button("Hitung BE"):
+    be = bm_total / valensi
+    st.success(f"BM = {bm_total:.2f} g/mol")
+    st.success(f"BE = {be:.2f} g/grek")
+    
 elif menu == "BM":
 
     st.subheader("⚖️ Berat Molekul (BM)")
