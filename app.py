@@ -392,7 +392,6 @@ st.markdown("""
 <style>
 div[data-baseweb="input"] > div {
     background-color: #588BAE;
-    border-radius: 10px;
 }
 
 div[data-baseweb="input"] input {
