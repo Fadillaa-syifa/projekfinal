@@ -362,7 +362,7 @@ st.markdown("""
 
 /* Saat kursor diarahkan */
 [data-testid="stSidebar"] .stButton button:hover {
-    background-color: #2E86C1;
+    background-color: #588BAE;
     color: white;
 }
 
