@@ -240,12 +240,18 @@ Satuan Berat Ekivalen adalah gram per ekuivalen (g/ekuivalen).
 Contoh:
 
 H₂SO₄
-BM = 98 g/mol
-f = 2
 
-BE = 98 / 2 = 49 g/ekuivalen
+BM = 98 g/mol
+
+a = 2
+
 """)
- 
+
+    st.latex(r'''
+BE = \frac{98}{2}
+= 49\ \text{g/ekuivalen}
+''')
+    
     jumlah_unsur = st.number_input(
         "Jumlah jenis unsur",
         min_value=1,
