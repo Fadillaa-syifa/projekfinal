@@ -242,7 +242,7 @@ for i in range(jumlah_unsur):
     total_bm += data_ar[unsur] * atom
 
     if st.button("Hitung BM"):
-    st.success(f"BM = {total_bm:.2f} g/mol")
+st.success(f"BM = {total_bm:.2f} g/mol")
 
 elif menu == "Ar":
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
