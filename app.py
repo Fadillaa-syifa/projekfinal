@@ -174,7 +174,7 @@ with col1:
             key=f"be_unsur_{i}"
         )
 
- with col2:
+with col2:
         atom = st.number_input(
             f"Jumlah atom {i+1}",
             min_value=1,
