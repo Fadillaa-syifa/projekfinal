@@ -182,7 +182,7 @@ with col2:
             key=f"be_atom_{i}"
         )
 
-    bm_total += data_ar[unsur] * atom
+bm_total += data_ar[unsur] * atom
 
 valensi = st.number_input(
     "Valensi",
