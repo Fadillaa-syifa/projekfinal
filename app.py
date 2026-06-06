@@ -168,6 +168,60 @@ N = 1 N
         st.success(f"Normalitas = {hasil:.4f} grek/L")
 
 elif menu == "Molaritas":
+
+    st.subheader("🧪 Molaritas (M)")
+
+    st.write("""
+Molaritas adalah konsentrasi larutan yang menyatakan jumlah mol zat terlarut dalam setiap liter larutan. Molaritas sangat sering digunakan dalam kimia untuk membuat larutan standar, menghitung konsentrasi reagen, dan melakukan perhitungan stoikiometri reaksi.
+
+Rumus molaritas adalah:
+
+M = n / V
+
+dengan:
+- n = jumlah mol zat terlarut
+- V = volume larutan (L)
+
+Satuan molaritas adalah mol/L atau M (molar).
+""")
+
+    st.markdown("**Rumus Molaritas:**")
+
+    st.latex(r'''
+M = \frac{n}{V}
+''')
+
+    st.markdown("**Jika jumlah mol diperoleh dari massa zat:**")
+
+    st.latex(r'''
+n = \frac{massa}{BM}
+''')
+
+    st.latex(r'''
+M = \frac{massa}{BM \times V}
+''')
+
+    st.write("""
+Keterangan:
+
+- M = Molaritas (mol/L)
+- n = Jumlah mol zat
+- BM = Berat Molekul (g/mol)
+- V = Volume larutan (L)
+
+Contoh:
+
+Massa NaCl = 5,85 gram
+
+BM NaCl = 58,5 g/mol
+
+Volume = 500 mL = 0,5 L
+
+Jumlah mol = 5,85 / 58,5 = 0,1 mol
+
+Molaritas = 0,1 / 0,5 = 0,2 M
+""")
+
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     bm = st.number_input("Berat Molekul (BM)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
