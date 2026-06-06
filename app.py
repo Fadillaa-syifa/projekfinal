@@ -369,8 +369,6 @@ st.markdown("""
     background-color: #588BAE !important;
     color: white !important;
     border: none;
-    border-radius: 12px;
-    padding: 12px;
 }
 
 /* Saat kursor diarahkan */
