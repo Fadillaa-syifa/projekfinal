@@ -251,6 +251,54 @@ elif menu == "Ar":
 
 elif menu == "Konversi Suhu":
 
+    st.subheader("🌡️ Suhu dan Skala Suhu")
+
+    st.write("""
+Suhu adalah besaran yang menunjukkan tingkat panas atau dingin suatu benda. Dalam ilmu kimia dan fisika terdapat beberapa skala suhu, yaitu Celsius (°C) yang umum digunakan sehari-hari, Kelvin (K) yang digunakan dalam perhitungan ilmiah karena merupakan skala absolut, Fahrenheit (°F) yang banyak digunakan di Amerika Serikat, dan Reamur (°R) yang kini jarang digunakan.
+
+Suhu berperan penting dalam mengendalikan laju reaksi kimia, menentukan kondisi praktikum laboratorium, menghitung sifat gas, serta berbagai proses industri.
+
+Satuan suhu yang digunakan bergantung pada skalanya, yaitu °C, K, °F, dan °R.
+
+Rumus Konversi Suhu:
+
+• Celsius → Fahrenheit
+°F = (°C × 9/5) + 32
+
+• Celsius → Kelvin
+K = °C + 273,15
+
+• Celsius → Reamur
+°R = °C × 4/5
+
+• Fahrenheit → Celsius
+°C = (°F − 32) × 5/9
+
+• Fahrenheit → Kelvin
+K = ((°F − 32) × 5/9) + 273,15
+
+• Fahrenheit → Reamur
+°R = (°F − 32) × 4/9
+
+• Kelvin → Celsius
+°C = K − 273,15
+
+• Kelvin → Fahrenheit
+°F = ((K − 273,15) × 9/5) + 32
+
+• Kelvin → Reamur
+°R = (K − 273,15) × 4/5
+
+• Reamur → Celsius
+°C = °R × 5/4
+
+• Reamur → Fahrenheit
+°F = (°R × 9/4) + 32
+
+• Reamur → Kelvin
+K = (°R × 5/4) + 273,15
+""")
+
     jenis = st.selectbox(
         "Konversi",
         [
