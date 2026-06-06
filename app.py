@@ -357,7 +357,6 @@ st.markdown("""
 [data-testid="stSidebar"] .stButton button {
     background-color: #003152 /* warna tombol */
     color: white;                
-    border-radius: 10px;
 }
 
 st.markdown("""
@@ -365,7 +364,6 @@ st.markdown("""
 
 /* Tombol menu sidebar */
 [data-testid="stSidebar"] .stButton button {
-    width: 100%;
     background-color: #588BAE !important;
     color: white !important;
 }
@@ -414,4 +412,4 @@ div[data-baseweb="select"] span {
 }
 
 </style>
-""",unsafe_allow_html=True)
+""", unsafe_allow_html=True)
