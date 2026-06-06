@@ -360,6 +360,19 @@ st.markdown("""
     border-radius: 10px;
 }
 
+st.markdown("""
+<style>
+
+/* Tombol menu sidebar */
+[data-testid="stSidebar"] .stButton button {
+    width: 100%;
+    background-color: #588BAE !important;
+    color: white !important;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+}
+
 /* Saat kursor diarahkan */
 [data-testid="stSidebar"] .stButton button:hover {
     background-color: #003152;
