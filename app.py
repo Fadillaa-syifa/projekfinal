@@ -167,14 +167,14 @@ bm_total = 0
 for i in range(jumlah_unsur):
         col1, col2 = st.columns(2)
 
-    with col1:
+with col1:
         unsur = st.selectbox(
             f"Unsur {i+1}",
             list(data_ar.keys()),
             key=f"be_unsur_{i}"
         )
 
-    with col2:
+ with col2:
         atom = st.number_input(
             f"Jumlah atom {i+1}",
             min_value=1,
