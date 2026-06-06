@@ -264,139 +264,139 @@ Rumus Konversi Suhu:""")
 
     st.write("**Rumus Konversi Suhu:**")
 
-st.markdown("**Celsius (°C) → Fahrenheit (°F)**")
-st.latex(r'''
-^\circ F = \frac{9}{5}(^\circ C) + 32
-''')
-
-st.markdown("**Celsius (°C) → Kelvin (K)**")
-st.latex(r'''
-K = ^\circ C + 273.15
-''')
-
-st.markdown("**Celsius (°C) → Reamur (°R)**")
-st.latex(r'''
-^\circ R = \frac{4}{5}(^\circ C)
-''')
-
-st.markdown("**Fahrenheit (°F) → Celsius (°C)**")
-st.latex(r'''
-^\circ C = \frac{5}{9}(^\circ F - 32)
-''')
-
-st.markdown("**Fahrenheit (°F) → Kelvin (K)**")
-st.latex(r'''
-K = \frac{5}{9}(^\circ F - 32) + 273.15
-''')
-
-st.markdown("**Fahrenheit (°F) → Reamur (°R)**")
-st.latex(r'''
-^\circ R = \frac{4}{9}(^\circ F - 32)
-''')
-
-st.markdown("**Kelvin (K) → Celsius (°C)**")
-st.latex(r'''
-^\circ C = K - 273.15
-''')
-
-st.markdown("**Kelvin (K) → Fahrenheit (°F)**")
-st.latex(r'''
-^\circ F = \frac{9}{5}(K - 273.15) + 32
-''')
-
-st.markdown("**Kelvin (K) → Reamur (°R)**")
-st.latex(r'''
-^\circ R = \frac{4}{5}(K - 273.15)
-''')
-
-st.markdown("**Reamur (°R) → Celsius (°C)**")
-st.latex(r'''
-^\circ C = \frac{5}{4}(^\circ R)
-''')
-
-st.markdown("**Reamur (°R) → Fahrenheit (°F)**")
-st.latex(r'''
-^\circ F = \frac{9}{4}(^\circ R) + 32
-''')
-
-st.markdown("**Reamur (°R) → Kelvin (K)**")
-st.latex(r'''
-K = \frac{5}{4}(^\circ R) + 273.15
-''')
-
-jenis = st.selectbox(
+    st.markdown("**Celsius (°C) → Fahrenheit (°F)**")
+    st.latex(r'''
+    ^\circ F = \frac{9}{5}(^\circ C) + 32
+    ''')
     
-    "Konversi",
-    [
-        "Celcius ke Fahrenheit",
-        "Celcius ke Kelvin",
-        "Celcius ke Reamur",
-
-        "Fahrenheit ke Celcius",
-        "Fahrenheit ke Kelvin",
-        "Fahrenheit ke Reamur",
-
-        "Kelvin ke Celcius",
-        "Kelvin ke Fahrenheit",
-        "Kelvin ke Reamur",
-
-        "Reamur ke Celcius",
-        "Reamur ke Fahrenheit",
-        "Reamur ke Kelvin"
-    ]
-)
-
-suhu = st.number_input("Masukkan suhu")
-
-if jenis == "Celcius ke Fahrenheit":
-        hasil = (suhu * 9/5) + 32
-        satuan = "°F"
-
-elif jenis == "Celcius ke Kelvin":
-        hasil = suhu + 273.15
-        satuan = "K"
-
-elif jenis == "Celcius ke Reamur":
-        hasil = suhu * 4/5
-        satuan = "°R"
-
-elif jenis == "Fahrenheit ke Celcius":
-        hasil = (suhu - 32) * 5/9
-        satuan = "°C"
-
-elif jenis == "Fahrenheit ke Kelvin":
-        hasil = ((suhu - 32) * 5/9) + 273.15
-        satuan = "K"
-
-elif jenis == "Fahrenheit ke Reamur":
-        hasil = (suhu - 32) * 4/9
-        satuan = "°R"
-
-elif jenis == "Kelvin ke Celcius":
-        hasil = suhu - 273.15
-        satuan = "°C"
-
-elif jenis == "Kelvin ke Fahrenheit":
-        hasil = ((suhu - 273.15) * 9/5) + 32
-        satuan = "°F"
-
-elif jenis == "Kelvin ke Reamur":
-        hasil = (suhu - 273.15) * 4/5
-        satuan = "°R"
-
-elif jenis == "Reamur ke Celcius":
-        hasil = suhu * 5/4
-        satuan = "°C"
-
-elif jenis == "Reamur ke Fahrenheit":
-        hasil = (suhu * 9/4) + 32
-        satuan = "°F"
-
-elif jenis == "Reamur ke Kelvin":
-        hasil = (suhu * 5/4) + 273.15
-        satuan = "K"
+    st.markdown("**Celsius (°C) → Kelvin (K)**")
+    st.latex(r'''
+    K = ^\circ C + 273.15
+    ''')
     
-        st.success(f"Hasil = {hasil:.2f} {satuan}")
+    st.markdown("**Celsius (°C) → Reamur (°R)**")
+    st.latex(r'''
+    ^\circ R = \frac{4}{5}(^\circ C)
+    ''')
+    
+    st.markdown("**Fahrenheit (°F) → Celsius (°C)**")
+    st.latex(r'''
+    ^\circ C = \frac{5}{9}(^\circ F - 32)
+    ''')
+    
+    st.markdown("**Fahrenheit (°F) → Kelvin (K)**")
+    st.latex(r'''
+    K = \frac{5}{9}(^\circ F - 32) + 273.15
+    ''')
+    
+    st.markdown("**Fahrenheit (°F) → Reamur (°R)**")
+    st.latex(r'''
+    ^\circ R = \frac{4}{9}(^\circ F - 32)
+    ''')
+    
+    st.markdown("**Kelvin (K) → Celsius (°C)**")
+    st.latex(r'''
+    ^\circ C = K - 273.15
+    ''')
+    
+    st.markdown("**Kelvin (K) → Fahrenheit (°F)**")
+    st.latex(r'''
+    ^\circ F = \frac{9}{5}(K - 273.15) + 32
+    ''')
+    
+    st.markdown("**Kelvin (K) → Reamur (°R)**")
+    st.latex(r'''
+    ^\circ R = \frac{4}{5}(K - 273.15)
+    ''')
+    
+    st.markdown("**Reamur (°R) → Celsius (°C)**")
+    st.latex(r'''
+    ^\circ C = \frac{5}{4}(^\circ R)
+    ''')
+    
+    st.markdown("**Reamur (°R) → Fahrenheit (°F)**")
+    st.latex(r'''
+    ^\circ F = \frac{9}{4}(^\circ R) + 32
+    ''')
+    
+    st.markdown("**Reamur (°R) → Kelvin (K)**")
+    st.latex(r'''
+    K = \frac{5}{4}(^\circ R) + 273.15
+    ''')
+    
+    jenis = st.selectbox(
+        
+        "Konversi",
+        [
+            "Celcius ke Fahrenheit",
+            "Celcius ke Kelvin",
+            "Celcius ke Reamur",
+    
+            "Fahrenheit ke Celcius",
+            "Fahrenheit ke Kelvin",
+            "Fahrenheit ke Reamur",
+    
+            "Kelvin ke Celcius",
+            "Kelvin ke Fahrenheit",
+            "Kelvin ke Reamur",
+    
+            "Reamur ke Celcius",
+            "Reamur ke Fahrenheit",
+            "Reamur ke Kelvin"
+        ]
+    )
+    
+    suhu = st.number_input("Masukkan suhu")
+    
+    if jenis == "Celcius ke Fahrenheit":
+            hasil = (suhu * 9/5) + 32
+            satuan = "°F"
+    
+    elif jenis == "Celcius ke Kelvin":
+            hasil = suhu + 273.15
+            satuan = "K"
+    
+    elif jenis == "Celcius ke Reamur":
+            hasil = suhu * 4/5
+            satuan = "°R"
+    
+    elif jenis == "Fahrenheit ke Celcius":
+            hasil = (suhu - 32) * 5/9
+            satuan = "°C"
+    
+    elif jenis == "Fahrenheit ke Kelvin":
+            hasil = ((suhu - 32) * 5/9) + 273.15
+            satuan = "K"
+    
+    elif jenis == "Fahrenheit ke Reamur":
+            hasil = (suhu - 32) * 4/9
+            satuan = "°R"
+    
+    elif jenis == "Kelvin ke Celcius":
+            hasil = suhu - 273.15
+            satuan = "°C"
+    
+    elif jenis == "Kelvin ke Fahrenheit":
+            hasil = ((suhu - 273.15) * 9/5) + 32
+            satuan = "°F"
+    
+    elif jenis == "Kelvin ke Reamur":
+            hasil = (suhu - 273.15) * 4/5
+            satuan = "°R"
+    
+    elif jenis == "Reamur ke Celcius":
+            hasil = suhu * 5/4
+            satuan = "°C"
+    
+    elif jenis == "Reamur ke Fahrenheit":
+            hasil = (suhu * 9/4) + 32
+            satuan = "°F"
+    
+    elif jenis == "Reamur ke Kelvin":
+            hasil = (suhu * 5/4) + 273.15
+            satuan = "K"
+        
+            st.success(f"Hasil = {hasil:.2f} {satuan}")
 
 elif menu == "PPM":
     st.subheader("🫧 Parts Per Million (PPM)")
