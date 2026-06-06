@@ -407,7 +407,6 @@ st.markdown("""
 div[data-baseweb="select"] > div {
     background-color: #588BAE;
     color: white;
-
 }
 
 /* Teks di dalam selectbox */
