@@ -284,6 +284,53 @@ elif menu == "Konversi Suhu":
         st.success(f"Hasil = {hasil:.2f} {satuan}")
 
 elif menu == "PPM":
+    st.subheader("🫧 Parts Per Million (PPM)")
+
+    st.write("""
+PPM atau Parts Per Million adalah satuan konsentrasi yang menyatakan jumlah bagian zat dalam satu juta bagian campuran. PPM biasanya digunakan untuk mengukur konsentrasi zat yang sangat kecil, seperti polutan dalam air, udara, tanah, atau kandungan logam berat.
+
+Pada larutan air:
+
+1 ppm ≈ 1 mg/L
+
+Satuan yang digunakan adalah ppm.
+
+Rumus:
+
+PPM = massa zat terlarut (mg) / volume larutan (L)
+
+Contoh:
+
+Massa zat = 50 mg
+
+Volume larutan = 2 L
+
+PPM = 50 / 2 = 25 mg/L
+""")
+
+    massa = st.number_input(
+        "Massa zat terlarut (mg)",
+        min_value=0.0
+    )
+
+    volume = st.number_input(
+        "Volume larutan (L)",
+        min_value=0.0
+    )
+
+    if st.button("Hitung PPM"):
+        hasil = massa / volume
+        st.success(f"PPM = {hasil:.4f} ppm")
+
+Sekalian saya sarankan ubah hasil dari:
+
+st.success(f"PPM = {hasil:.4f} mg/L")
+
+menjadi:
+
+st.success(f"PPM = {hasil:.4f} ppm")
+
+karena nama menu dan rumus yang kamu pakai memang menghitung PPM, bukan menampilkan satuan mg/L. Untuk larutan air encer, nilai ppm memang setara dengan mg/L, tetapi tampilannya lebih konsisten jika hasil ditulis dalam ppm.
     massa = st.number_input("Massa zat terlarut (mg)", min_value=0.0)
     volume = st.number_input("Volume larutan (L)", min_value=0.0)
 
