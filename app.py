@@ -348,8 +348,6 @@ jenis = st.selectbox(
 
 suhu = st.number_input("Masukkan suhu")
 
-if st.button("Konversi"):
-
 if jenis == "Celcius ke Fahrenheit":
         hasil = (suhu * 9/5) + 32
         satuan = "°F"
