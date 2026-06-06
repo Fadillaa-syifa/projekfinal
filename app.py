@@ -352,47 +352,47 @@ if jenis == "Celcius ke Fahrenheit":
         hasil = (suhu * 9/5) + 32
         satuan = "°F"
 
-    elif jenis == "Celcius ke Kelvin":
+elif jenis == "Celcius ke Kelvin":
         hasil = suhu + 273.15
         satuan = "K"
 
-    elif jenis == "Celcius ke Reamur":
+elif jenis == "Celcius ke Reamur":
         hasil = suhu * 4/5
         satuan = "°R"
 
-    elif jenis == "Fahrenheit ke Celcius":
+elif jenis == "Fahrenheit ke Celcius":
         hasil = (suhu - 32) * 5/9
         satuan = "°C"
 
-    elif jenis == "Fahrenheit ke Kelvin":
+elif jenis == "Fahrenheit ke Kelvin":
         hasil = ((suhu - 32) * 5/9) + 273.15
         satuan = "K"
 
-    elif jenis == "Fahrenheit ke Reamur":
+elif jenis == "Fahrenheit ke Reamur":
         hasil = (suhu - 32) * 4/9
         satuan = "°R"
 
-    elif jenis == "Kelvin ke Celcius":
+elif jenis == "Kelvin ke Celcius":
         hasil = suhu - 273.15
         satuan = "°C"
 
-    elif jenis == "Kelvin ke Fahrenheit":
+elif jenis == "Kelvin ke Fahrenheit":
         hasil = ((suhu - 273.15) * 9/5) + 32
         satuan = "°F"
 
-    elif jenis == "Kelvin ke Reamur":
+elif jenis == "Kelvin ke Reamur":
         hasil = (suhu - 273.15) * 4/5
         satuan = "°R"
 
-    elif jenis == "Reamur ke Celcius":
+elif jenis == "Reamur ke Celcius":
         hasil = suhu * 5/4
         satuan = "°C"
 
-    elif jenis == "Reamur ke Fahrenheit":
+elif jenis == "Reamur ke Fahrenheit":
         hasil = (suhu * 9/4) + 32
         satuan = "°F"
 
-    elif jenis == "Reamur ke Kelvin":
+elif jenis == "Reamur ke Kelvin":
         hasil = (suhu * 5/4) + 273.15
         satuan = "K"
 
