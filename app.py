@@ -497,7 +497,7 @@ Rumus Konversi Suhu:""")
             hasil = (suhu * 5/4) + 273.15
             satuan = "K"
 
-        if st.button("Hitung PPM"):
+        if st.button("Konversi"):
             st.success(f"Hasil = {hasil:.2f} {satuan}")
 
 elif menu == "PPM":
