@@ -104,7 +104,7 @@ Melalui ChemBuddy, pengguna dapat dengan mudah melakukan berbagai konversi dan p
 - Molaritas (M)
 - Parts Per Million (PPM)
 
-Mata kuliah Kimia Dasar dan Fisika Dasar sering menjadi tantangan bagi mahasiswa baru karena banyaknya konsep dan perhitungan yang harus dipahami. Tidak sedikit mahasiswa yang harus mengulang mata kuliah tersebut akibat kesulitan dalam memahami materi dasar. Oleh karena itu, ChemBuddy hadir sebagai solusi praktis untuk membantu proses belajar menjadi lebih mudah, cepat, dan efisien.
+Mata kuliah Kimia Dasar,Titrimetri, dan Fisika Dasar sering menjadi tantangan bagi mahasiswa baru karena banyaknya konsep dan perhitungan yang harus dipahami. Tidak sedikit mahasiswa yang harus mengulang mata kuliah tersebut akibat kesulitan dalam memahami materi dasar. Oleh karena itu, ChemBuddy hadir sebagai solusi praktis untuk membantu proses belajar menjadi lebih mudah, cepat, dan efisien.
 
 Dengan fitur yang sederhana dan mudah digunakan, ChemBuddy diharapkan dapat menjadi teman belajar yang membantu mahasiswa meningkatkan pemahaman konsep serta mengurangi kesalahan dalam perhitungan.
 
