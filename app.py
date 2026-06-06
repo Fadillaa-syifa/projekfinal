@@ -245,6 +245,7 @@ for i in range(jumlah_unsur):
        st.success(f"BM = {total_bm:.2f} g/mol")
 
 elif menu == "Ar":
+
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
     st.info(f"Ar {unsur} = {data_ar[unsur]}")
 
