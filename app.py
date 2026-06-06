@@ -112,6 +112,53 @@ Dengan fitur yang sederhana dan mudah digunakan, ChemBuddy diharapkan dapat menj
 """)
 
 elif menu == "Normalitas":
+    st.subheader("⚖️ Normalitas (N)")
+
+    st.write("""
+Normalitas adalah konsentrasi larutan yang menunjukkan jumlah ekuivalen zat terlarut dalam setiap liter larutan. Normalitas banyak digunakan dalam titrasi asam-basa, reaksi redoks, dan analisis kimia yang melibatkan perpindahan ion atau elektron.
+
+Hubungan normalitas dengan molaritas adalah:
+
+N = M × faktor ekuivalen (f)
+
+Satuan normalitas adalah ekuivalen per liter (N) atau grek/L.
+""")
+
+    st.markdown("**Rumus Normalitas:**")
+
+    st.latex(r'''
+N = \frac{gram}{BE \times V(L)}
+''')
+
+    st.markdown("**Hubungan Normalitas dan Molaritas:**")
+
+    st.latex(r'''
+N = M \times a
+''')
+
+    st.write("""
+Keterangan:
+
+- N = Normalitas
+- M = Molaritas
+- a = Faktor ekuivalen
+- BE = Berat Ekivalen
+- V = Volume larutan (L)
+
+Contoh:
+
+Massa zat = 4,9 gram
+
+BE = 49 g/ekuivalen
+
+Volume = 100 mL = 0,1 L
+
+N = 4,9 / (49 × 0,1)
+
+N = 1 N
+""")
+
+    
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
