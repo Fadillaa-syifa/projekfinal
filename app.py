@@ -118,8 +118,24 @@ elif menu == "Normalitas":
 Normalitas adalah konsentrasi larutan yang menunjukkan jumlah ekuivalen zat terlarut dalam setiap liter larutan. Normalitas banyak digunakan dalam titrasi asam-basa, reaksi redoks, dan analisis kimia yang melibatkan perpindahan ion atau elektron.
 
 Satuan normalitas adalah ekuivalen per liter (N) atau grek/L.
-""")
 
+Contoh:
+
+Massa zat = 4,9 gram
+
+BE = 49 g/grek
+
+Volume = 100 mL = 0,1 L
+
+""")
+    
+st.latex(r'''
+N = \frac{4.9}{49 \times 0.1}
+''')
+
+st.latex(r'''
+N = 1\ \text{grek/L}
+''')
     st.markdown("**Rumus Normalitas:**")
 
     st.latex(r'''
@@ -140,22 +156,6 @@ Keterangan:
 - a = Faktor ekuivalen
 - BE = Berat Ekivalen
 - V = Volume larutan (L)
-
-Contoh:
-
-Massa zat = 4,9 gram
-
-BE = 49 g/grek
-
-Volume = 100 mL = 0,1 L
-
-st.latex(r'''
-N = \frac{4.9}{49 \times 0.1}
-''')
-
-st.latex(r'''
-N = 1\ \text{grek/L}
-''')
 """)
 
     
