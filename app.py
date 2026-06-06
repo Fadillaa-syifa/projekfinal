@@ -385,7 +385,7 @@ div[data-baseweb="input"] > div {
 }
 
 div[data-baseweb="input"] input {
-    color: #36454F;
+    color:white;
 }
 </style>
 """, unsafe_allow_html=True)
