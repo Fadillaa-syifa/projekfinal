@@ -260,44 +260,31 @@ Suhu berperan penting dalam mengendalikan laju reaksi kimia, menentukan kondisi 
 
 Satuan suhu yang digunakan bergantung pada skalanya, yaitu °C, K, °F, dan °R.
 
-Rumus Konversi Suhu:
+Rumus Konversi Suhu:""")
 
-• Celsius → Fahrenheit
-°F = (°C × 9/5) + 32
+st.latex(r'''
+^\circ F = \frac{9}{5}(^\circ C) + 32
+''')
 
-• Celsius → Kelvin
-K = °C + 273,15
+st.latex(r'''
+K = ^\circ C + 273.15
+''')
 
-• Celsius → Reamur
-°R = °C × 4/5
+st.latex(r'''
+^\circ C = \frac{5}{9}(^\circ F - 32)
+''')
 
-• Fahrenheit → Celsius
-°C = (°F − 32) × 5/9
+st.latex(r'''
+^\circ C = K - 273.15
+''')
 
-• Fahrenheit → Kelvin
-K = ((°F − 32) × 5/9) + 273,15
+st.latex(r'''
+^\circ R = \frac{4}{5}(^\circ C)
+''')
 
-• Fahrenheit → Reamur
-°R = (°F − 32) × 4/9
-
-• Kelvin → Celsius
-°C = K − 273,15
-
-• Kelvin → Fahrenheit
-°F = ((K − 273,15) × 9/5) + 32
-
-• Kelvin → Reamur
-°R = (K − 273,15) × 4/5
-
-• Reamur → Celsius
-°C = °R × 5/4
-
-• Reamur → Fahrenheit
-°F = (°R × 9/4) + 32
-
-• Reamur → Kelvin
-K = (°R × 5/4) + 273,15
-""")
+st.latex(r'''
+^\circ C = \frac{5}{4}(^\circ R)
+''')
 
     jenis = st.selectbox(
         "Konversi",
