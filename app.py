@@ -356,7 +356,7 @@ st.markdown("""
 /* Warna tombol menu sidebar */
 [data-testid="stSidebar"] .stButton button {
     background-color: #003152 /* warna tombol */
-    color: white;                /* warna tulisan */
+    color: white;                
     border-radius: 10px;
 }
 
@@ -368,13 +368,14 @@ st.markdown("""
     width: 100%;
     background-color: #588BAE !important;
     color: white !important;
+    border-radius: 10px;
     border: none;
 }
 
-/* Saat kursor diarahkan */
+/* Hover */
 [data-testid="stSidebar"] .stButton button:hover {
-    background-color: #003152;
-    color: white;
+    background-color: #003152; !important;
+    color: white !important;
 }
 
 </style>
