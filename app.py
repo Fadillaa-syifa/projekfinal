@@ -410,6 +410,5 @@ div[data-baseweb="select"] > div {
 div[data-baseweb="select"] span {
     color: white;
 }
-
 </style>
 """, unsafe_allow_html=True)
