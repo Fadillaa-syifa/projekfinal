@@ -145,13 +145,17 @@ Contoh:
 
 Massa zat = 4,9 gram
 
-BE = 49 g/ekuivalen
+BE = 49 g/grek
 
 Volume = 100 mL = 0,1 L
 
-N = 4,9 / (49 × 0,1)
+st.latex(r'''
+N = \frac{4.9}{49 \times 0.1}
+''')
 
-N = 1 N
+st.latex(r'''
+N = 1\ \text{grek/L}
+''')
 """)
 
     
@@ -171,6 +175,22 @@ elif menu == "Molaritas":
 Molaritas adalah konsentrasi larutan yang menyatakan jumlah mol zat terlarut dalam setiap liter larutan. Molaritas sangat sering digunakan dalam kimia untuk membuat larutan standar, menghitung konsentrasi reagen, dan melakukan perhitungan stoikiometri reaksi.
 
 Satuan molaritas adalah mol/L atau M (molar).
+
+Contoh:
+
+Massa NaCl = 5,85 gram
+
+BM NaCl = 58,5 g/mol
+
+Volume = 500 mL = 0,5 L
+
+Jumlah mol = 5,85 / 58,5 = 0,1 mol
+
+st.latex(r'''
+M = \frac{5.85\ g}{58.5\ g/mol \times 0.5\ L}
+= 0.2\ mol/L
+''')
+
 """)
 
     st.markdown("**Rumus Molaritas:**")
@@ -197,17 +217,7 @@ Keterangan:
 - BM = Berat Molekul (g/mol)
 - V = Volume larutan (L)
 
-Contoh:
 
-Massa NaCl = 5,85 gram
-
-BM NaCl = 58,5 g/mol
-
-Volume = 500 mL = 0,5 L
-
-Jumlah mol = 5,85 / 58,5 = 0,1 mol
-
-Molaritas = 0,1 / 0,5 = 0,2 M
 """)
 
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
