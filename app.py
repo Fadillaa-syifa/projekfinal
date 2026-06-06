@@ -262,29 +262,29 @@ Satuan suhu yang digunakan bergantung pada skalanya, yaitu °C, K, °F, dan °R.
 
 Rumus Konversi Suhu:""")
 
-st.latex(r'''
-^\circ F = \frac{9}{5}(^\circ C) + 32
-''')
-
-st.latex(r'''
-K = ^\circ C + 273.15
-''')
-
-st.latex(r'''
-^\circ C = \frac{5}{9}(^\circ F - 32)
-''')
-
-st.latex(r'''
-^\circ C = K - 273.15
-''')
-
-st.latex(r'''
-^\circ R = \frac{4}{5}(^\circ C)
-''')
-
-st.latex(r'''
-^\circ C = \frac{5}{4}(^\circ R)
-''')
+    st.latex(r'''
+    ^\circ F = \frac{9}{5}(^\circ C) + 32
+    ''')
+    
+    st.latex(r'''
+    K = ^\circ C + 273.15
+    ''')
+    
+    st.latex(r'''
+    ^\circ C = \frac{5}{9}(^\circ F - 32)
+    ''')
+    
+    st.latex(r'''
+    ^\circ C = K - 273.15
+    ''')
+    
+    st.latex(r'''
+    ^\circ R = \frac{4}{5}(^\circ C)
+    ''')
+    
+    st.latex(r'''
+    ^\circ C = \frac{5}{4}(^\circ R)
+    ''')
 
     jenis = st.selectbox(
         "Konversi",
