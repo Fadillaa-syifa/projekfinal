@@ -129,15 +129,15 @@ Volume = 100 mL = 0,1 L
 
 """)
     
-st.latex(r'''
+    st.latex(r'''
 N = \frac{4.9}{49 \times 0.1}
 ''')
 
-st.latex(r'''
+    st.latex(r'''
 N = 1\ \text{grek/L}
 ''')
     
-st.markdown("**Rumus Normalitas:**")
+    st.markdown("**Rumus Normalitas:**")
 
     st.latex(r'''
 N = \frac{gram}{BE \times V(L)}
@@ -159,7 +159,6 @@ Keterangan:
 - V = Volume larutan (L)
 """)
 
-    
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
