@@ -164,7 +164,7 @@ jumlah_unsur = st.number_input(
 
 bm_total = 0
 
-    for i in range(jumlah_unsur):
+for i in range(jumlah_unsur):
         col1, col2 = st.columns(2)
 
     with col1:
