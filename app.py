@@ -23,7 +23,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 # Data Ar unsur
 data_ar = {
     "H": 1,
@@ -132,7 +131,7 @@ elif menu == "Molaritas":
 
 elif menu == "BE":
     st.subheader("🧪 Berat Ekivalen (BE)")
-    st.info("""Berat Ekivalen (BE) adalah massa suatu zat yang setara dengan satu ekuivalen dalam suatu reaksi kimia. BE digunakan dalam perhitungan normalitas, titrasi, serta analisis reaksi asam-basa dan reaksi redoks.
+    st.write("""Berat Ekivalen (BE) adalah massa suatu zat yang setara dengan satu ekuivalen dalam suatu reaksi kimia. BE digunakan dalam perhitungan normalitas, titrasi, serta analisis reaksi asam-basa dan reaksi redoks.
 
 Rumus:
 
@@ -199,7 +198,7 @@ elif menu == "BM":
 
     st.subheader("⚖️ Berat Molekul (BM)")
 
-    st.info("""
+    st.write("""
 Berat Molekul atau Massa Molekul Relatif (Mr) merupakan jumlah massa atom relatif seluruh atom yang menyusun suatu molekul. BM digunakan untuk menghitung massa zat, jumlah mol, molaritas, dan berbagai perhitungan stoikiometri.
 
 Rumus:
