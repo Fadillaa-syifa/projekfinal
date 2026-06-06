@@ -136,7 +136,8 @@ N = \frac{4.9}{49 \times 0.1}
 st.latex(r'''
 N = 1\ \text{grek/L}
 ''')
-    st.markdown("**Rumus Normalitas:**")
+    
+st.markdown("**Rumus Normalitas:**")
 
     st.latex(r'''
 N = \frac{gram}{BE \times V(L)}
