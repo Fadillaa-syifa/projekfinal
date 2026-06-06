@@ -155,45 +155,45 @@ BE = 98 / 2 = 49 g/ekuivalen
 """)
  
 jumlah_unsur = st.number_input(
-    "Jumlah jenis unsur",
-    min_value=1,
-    max_value=5,
-    value=2,
-    key="be_jumlah"
-)
+        "Jumlah jenis unsur",
+        min_value=1,
+        max_value=5,
+        value=2,
+        key="be_jumlah"
+    )
 
-bm_total = 0
+    bm_total = 0
 
-for i in range(jumlah_unsur):
+    for i in range(jumlah_unsur):
         col1, col2 = st.columns(2)
 
-with col1:
-        unsur = st.selectbox(
-            f"Unsur {i+1}",
-            list(data_ar.keys()),
-            key=f"be_unsur_{i}"
-        )
+        with col1:
+            unsur = st.selectbox(
+                f"Unsur {i+1}",
+                list(data_ar.keys()),
+                key=f"be_unsur_{i}"
+            )
 
-with col2:
-        atom = st.number_input(
-            f"Jumlah atom {i+1}",
-            min_value=1,
-            step=1,
-            key=f"be_atom_{i}"
-        )
+        with col2:
+            atom = st.number_input(
+                f"Jumlah atom {i+1}",
+                min_value=1,
+                step=1,
+                key=f"be_atom_{i}"
+            )
 
-bm_total += data_ar[unsur] * atom
+        bm_total += data_ar[unsur] * atom
 
-valensi = st.number_input(
-    "Valensi",
-    min_value=1,
-    value=1
-)
+    valensi = st.number_input(
+        "Valensi",
+        min_value=1,
+        value=1
+    )
 
-if st.button("Hitung BE"):
-    be = bm_total / valensi
-    st.success(f"BM = {bm_total:.2f} g/mol")
-    st.success(f"BE = {be:.2f} g/grek")
+    if st.button("Hitung BE"):
+        be = bm_total / valensi
+        st.success(f"BM = {bm_total:.2f} g/mol")
+        st.success(f"BE = {be:.2f} g/grek")
     
 elif menu == "BM":
 
@@ -243,8 +243,6 @@ for i in range(jumlah_unsur):
 
 if st.button("Hitung BM"):
     st.success(f"BM = {total_bm:.2f} g/mol")
-    unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
-    jumlah = st.number_input("Jumlah atom", min_value=1, step=1)
 
 elif menu == "Ar":
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
