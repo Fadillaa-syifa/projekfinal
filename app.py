@@ -245,7 +245,9 @@ NaCl = 23 + 35,5 = 58,5 g/mol
         st.success(f"BM = {total_bm:.2f} g/mol")
 
 elif menu == "Ar":
+    st.subheader("🧬 Atom Relatif (Ar)")
 
+    st.write("""Atom Relatif (Ar) adalah massa rata-rata suatu atom dibandingkan dengan 1/12 massa atom karbon-12. Ar menjadi dasar dalam perhitungan BM, Mr, mol, dan stoikiometri reaksi kimia. Contohnya, Ar hidrogen adalah 1 dan Ar oksigen adalah 16. Ar tidak memiliki satuan karena merupakan nilai perbandingan relatif.Nilai Ar diperoleh dari tabel periodik unsur dan digunakan sebagai dasar dalam perhitungan massa molekul suatu senyawa""")
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
     st.info(f"Ar {unsur} = {data_ar[unsur]}")
 
