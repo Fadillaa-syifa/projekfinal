@@ -154,7 +154,7 @@ f = 2
 BE = 98 / 2 = 49 g/ekuivalen
 """)
  
-jumlah_unsur = st.number_input(
+    jumlah_unsur = st.number_input(
         "Jumlah jenis unsur",
         min_value=1,
         max_value=5,
