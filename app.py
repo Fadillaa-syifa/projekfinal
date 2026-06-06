@@ -320,22 +320,6 @@ PPM = 50 / 2 = 25 mg/L
 
     if st.button("Hitung PPM"):
         hasil = massa / volume
-        st.success(f"PPM = {hasil:.4f} ppm")
-
-Sekalian saya sarankan ubah hasil dari:
-
-st.success(f"PPM = {hasil:.4f} mg/L")
-
-menjadi:
-
-st.success(f"PPM = {hasil:.4f} ppm")
-
-karena nama menu dan rumus yang kamu pakai memang menghitung PPM, bukan menampilkan satuan mg/L. Untuk larutan air encer, nilai ppm memang setara dengan mg/L, tetapi tampilannya lebih konsisten jika hasil ditulis dalam ppm.
-    massa = st.number_input("Massa zat terlarut (mg)", min_value=0.0)
-    volume = st.number_input("Volume larutan (L)", min_value=0.0)
-
-    if st.button("Hitung PPM"):
-        hasil = massa / volume
         st.success(f"PPM = {hasil:.4f} mg/L")
 
 elif menu == "About Us":
