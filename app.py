@@ -370,7 +370,7 @@ st.markdown("""
 
 /* Hover */
 [data-testid="stSidebar"] .stButton button:hover {
-    background-color: #003152; !important;
+    background-color: #003152 !important;
     color: white !important;
 }
 
