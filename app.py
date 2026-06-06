@@ -200,28 +200,28 @@ elif menu == "BM":
     st.subheader("⚖️ Berat Molekul (BM)")
 
     st.info("""
-Berat Molekul atau Massa Molekul Relatif (Mr) merupakan jumlah massa atom relatif seluruh atom yang menyusun suatu molekul. BM digunakan untuk menghitung massa zat, jumlah mol, molaritas, dan berbagai perhitungan stoikiometri. Nilai BM diperoleh dengan menjumlahkan seluruh Ar unsur penyusunnya. Satuan yang digunakan adalah gram per mol (g/mol)
+    Berat Molekul atau Massa Molekul Relatif (Mr) merupakan jumlah massa atom relatif seluruh atom yang menyusun suatu molekul. BM digunakan untuk menghitung massa zat, jumlah mol, molaritas, dan berbagai perhitungan stoikiometri. Nilai BM diperoleh dengan menjumlahkan seluruh Ar unsur penyusunnya. Satuan yang digunakan adalah gram per mol (g/mol)
+    
+    Rumus:
+    BM = Σ(Ar × jumlah atom)
+    
+    Contoh:
+    
+    H₂O = (2 × 1) + (1 × 16) = 18 g/mol
+    
+    NaCl = 23 + 35,5 = 58,5 g/mol
+    """)
+    
+    jumlah_unsur = st.number_input(
+        "Jumlah jenis unsur",
+        min_value=1,
+        max_value=5,
+        value=2
+    )
+    
+    total_bm = 0
 
-Rumus:
-BM = Σ(Ar × jumlah atom)
-
-Contoh:
-
-H₂O = (2 × 1) + (1 × 16) = 18 g/mol
-
-NaCl = 23 + 35,5 = 58,5 g/mol
-""")
-
-jumlah_unsur = st.number_input(
-    "Jumlah jenis unsur",
-    min_value=1,
-    max_value=5,
-    value=2
-)
-
-total_bm = 0
-
-    for i in range(jumlah_unsur):
+for i in range(jumlah_unsur):
     col1, col2 = st.columns(2)
 
     with col1:
