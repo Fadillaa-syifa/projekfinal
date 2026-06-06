@@ -200,49 +200,50 @@ elif menu == "BM":
     st.subheader("⚖️ Berat Molekul (BM)")
 
     st.info("""
-    Berat Molekul atau Massa Molekul Relatif (Mr) merupakan jumlah massa atom relatif seluruh atom yang menyusun suatu molekul. BM digunakan untuk menghitung massa zat, jumlah mol, molaritas, dan berbagai perhitungan stoikiometri. Nilai BM diperoleh dengan menjumlahkan seluruh Ar unsur penyusunnya. Satuan yang digunakan adalah gram per mol (g/mol)
-    
-    Rumus:
-    BM = Σ(Ar × jumlah atom)
-    
-    Contoh:
-    
-    H₂O = (2 × 1) + (1 × 16) = 18 g/mol
-    
-    NaCl = 23 + 35,5 = 58,5 g/mol
-    """)
-    
+Berat Molekul atau Massa Molekul Relatif (Mr) merupakan jumlah massa atom relatif seluruh atom yang menyusun suatu molekul. BM digunakan untuk menghitung massa zat, jumlah mol, molaritas, dan berbagai perhitungan stoikiometri.
+
+Rumus:
+BM = Σ(Ar × jumlah atom)
+
+Contoh:
+
+H₂O = (2 × 1) + (1 × 16) = 18 g/mol
+
+NaCl = 23 + 35,5 = 58,5 g/mol
+""")
+
     jumlah_unsur = st.number_input(
         "Jumlah jenis unsur",
         min_value=1,
         max_value=5,
-        value=2
+        value=2,
+        key="bm_jumlah"
     )
-    
+
     total_bm = 0
 
-for i in range(jumlah_unsur):
-    col1, col2 = st.columns(2)
+    for i in range(jumlah_unsur):
+        col1, col2 = st.columns(2)
 
-    with col1:
-        unsur = st.selectbox(
-            f"Unsur {i+1}",
-            list(data_ar.keys()),
-            key=f"unsur_{i}"
-        )
+        with col1:
+            unsur = st.selectbox(
+                f"Unsur {i+1}",
+                list(data_ar.keys()),
+                key=f"bm_unsur_{i}"
+            )
 
-    with col2:
-        atom = st.number_input(
-            f"Jumlah atom {i+1}",
-            min_value=1,
-            step=1,
-            key=f"atom_{i}"
-        )
+        with col2:
+            atom = st.number_input(
+                f"Jumlah atom {i+1}",
+                min_value=1,
+                step=1,
+                key=f"bm_atom_{i}"
+            )
 
-    total_bm += data_ar[unsur] * atom
+        total_bm += data_ar[unsur] * atom
 
     if st.button("Hitung BM"):
-       st.success(f"BM = {total_bm:.2f} g/mol")
+        st.success(f"BM = {total_bm:.2f} g/mol")
 
 elif menu == "Ar":
 
