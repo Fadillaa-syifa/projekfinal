@@ -164,8 +164,8 @@ jumlah_unsur = st.number_input(
 
 bm_total = 0
 
-for i in range(jumlah_unsur):
-    col1, col2 = st.columns(2)
+    for i in range(jumlah_unsur):
+        col1, col2 = st.columns(2)
 
     with col1:
         unsur = st.selectbox(
@@ -190,7 +190,7 @@ valensi = st.number_input(
     value=1
 )
 
-if st.button("Hitung BE"):
+    if st.button("Hitung BE"):
     be = bm_total / valensi
     st.success(f"BM = {bm_total:.2f} g/mol")
     st.success(f"BE = {be:.2f} g/grek")
