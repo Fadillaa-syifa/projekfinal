@@ -131,10 +131,8 @@ elif menu == "Molaritas":
         st.success(f"Molaritas = {hasil:.4f} mol/L")
 
 elif menu == "BE":
-    
-st.subheader("🧪 Berat Ekivalen (BE)")
-
- st.info("""Berat Ekivalen (BE) adalah massa suatu zat yang setara dengan satu ekuivalen dalam suatu reaksi kimia. BE digunakan dalam perhitungan normalitas, titrasi, serta analisis reaksi asam-basa dan reaksi redoks.
+    st.subheader("🧪 Berat Ekivalen (BE)")
+    st.info("""Berat Ekivalen (BE) adalah massa suatu zat yang setara dengan satu ekuivalen dalam suatu reaksi kimia. BE digunakan dalam perhitungan normalitas, titrasi, serta analisis reaksi asam-basa dan reaksi redoks.
 
 Rumus:
 
