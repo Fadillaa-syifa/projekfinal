@@ -324,7 +324,8 @@ st.latex(r'''
 K = \frac{5}{4}(^\circ R) + 273.15
 ''')
 
-    jenis = st.selectbox(
+jenis = st.selectbox(
+    
     "Konversi",
     [
         "Celcius ke Fahrenheit",
