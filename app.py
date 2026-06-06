@@ -368,8 +368,6 @@ st.markdown("""
     width: 100%;
     background-color: #588BAE !important;
     color: white !important;
-    border-radius: 10px;
-    border: none;
 }
 
 /* Hover */
