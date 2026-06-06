@@ -155,12 +155,39 @@ H₂O = (2 × 1) + (1 × 16) = 18 g/mol
 NaCl = 23 + 35,5 = 58,5 g/mol
 """)
 
+jumlah_unsur = st.number_input(
+    "Jumlah jenis unsur",
+    min_value=1,
+    max_value=5,
+    value=2
+)
+
+total_bm = 0
+
+for i in range(jumlah_unsur):
+    col1, col2 = st.columns(2)
+
+    with col1:
+        unsur = st.selectbox(
+            f"Unsur {i+1}",
+            list(data_ar.keys()),
+            key=f"unsur_{i}"
+        )
+
+    with col2:
+        atom = st.number_input(
+            f"Jumlah atom {i+1}",
+            min_value=1,
+            step=1,
+            key=f"atom_{i}"
+        )
+
+    total_bm += data_ar[unsur] * atom
+
+if st.button("Hitung BM"):
+    st.success(f"BM = {total_bm:.2f} g/mol")
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
     jumlah = st.number_input("Jumlah atom", min_value=1, step=1)
-
-    if st.button("Hitung BM"):
-        hasil = data_ar[unsur] * jumlah
-        st.success(f"BM = {hasil} g/mol")
 
 elif menu == "Ar":
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
