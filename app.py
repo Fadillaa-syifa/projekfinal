@@ -55,13 +55,13 @@ if st.sidebar.button("🏠 Beranda"):
 if st.sidebar.button("🧪 Normalitas"):
     st.session_state.menu = "Normalitas"
 
-if st.sidebar.button("⚗️ Molaritas"):
+if st.sidebar.button("🧫 Molaritas"):
     st.session_state.menu = "Molaritas"
 
-if st.sidebar.button("📐 BE"):
+if st.sidebar.button("🧪 BE"):
     st.session_state.menu = "BE"
 
-if st.sidebar.button("📏 BM"):
+if st.sidebar.button("⚖️  BM"):
     st.session_state.menu = "BM"
 
 if st.sidebar.button("⚛️ Ar"):
