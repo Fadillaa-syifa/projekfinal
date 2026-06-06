@@ -187,7 +187,7 @@ Volume = 500 mL = 0,5 L
 Jumlah mol = 5,85 / 58,5 = 0,1 mol
 """)
 
-st.latex(r'''
+    st.latex(r'''
 M = \frac{5.85\ g}{58.5\ g/mol \times 0.5\ L}
 = 0.2\ mol/L
 ''')
