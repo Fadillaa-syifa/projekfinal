@@ -395,7 +395,7 @@ st.markdown("""
 
 /* Kotak selectbox */
 div[data-baseweb="select"] > div {
-    background-color: #588BAE;
+    background-color: #ID2951;
     color: white;
     border-radius: 10px;
 }
