@@ -149,7 +149,7 @@ Rumus:
 BM = Σ(Ar × jumlah atom)
 
 Contoh:
-H₂O = (2 × 1) + (1 × 16) = 18 g/mol
+H₂O = (2 × 1) + (1 × 16) = 18 g/mol,
 NaCl = 23 + 35,5 = 58,5 g/mol
 """)
 
