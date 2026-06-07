@@ -558,12 +558,12 @@ elif menu == "About Us":
         """)
     
     if os.path.exists("feedback.csv"):
-        df = pd.read_csv("feedback.csv")
-        rata_rata = df["Rating"].mean()
+    df = pd.read_csv("feedback.csv")
+    rata_rata = df["Rating"].mean()
 
-    st.metric(
-    "⭐ Rata-rata Rating",
-    f"{rata_rata:.1f}/5"
+     st.metric(
+        "⭐ Rata-rata Rating",
+        f"{rata_rata:.1f}/5"
     )
     
     
@@ -585,8 +585,7 @@ if rating is not None:
     })
 
     if os.path.exists("feedback.csv"):
-        data.to_csv(
-            "feedback.csv",
+        data.to_csv("feedback.csv",
             mode="a",
             header=False,
             index=False
