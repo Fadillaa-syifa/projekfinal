@@ -567,7 +567,7 @@ elif menu == "About Us":
     f"{rata_rata:.1f}/5"
     )
     
-    st.write(df.columns)
+    
         
    
 
