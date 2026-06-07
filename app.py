@@ -554,7 +554,7 @@ elif menu == "About Us":
 
     Kami percaya bahwa pembelajaran akan menjadi lebih menyenangkan ketika didukung oleh alat yang tepat. Oleh karena itu, melalui ChemBuddy kami berkomitmen untuk menghadirkan platform yang sederhana, bermanfaat, dan mudah digunakan oleh seluruh mahasiswa.
 
-    >**ChemBuddy — Your Smart Chemistry Learning Companion.**🧪✨
+    >ChemBuddy — Your Smart Chemistry Learning Companion.🧪✨
         """)
     
     if os.path.exists("feedback.csv"):
