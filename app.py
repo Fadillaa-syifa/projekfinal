@@ -560,8 +560,8 @@ elif menu == "About Us":
     if os.path.exists("feedback.csv"):
         df = pd.read_csv("feedback.csv")
         rata_rata = df["Rating"].mean()
-
-     st.metric(
+        
+        st.metric(
         "⭐ Rata-rata Rating",
         f"{rata_rata:.1f}/5"
     )
